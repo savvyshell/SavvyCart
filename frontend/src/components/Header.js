@@ -36,7 +36,7 @@ const Header = ({ history }) => {
     <header>
         <Navbar bg="primary" variant="dark" expand="lg" expanded={navExpanded}>
             <Container>
-                <Link to='/'>
+                <Link to='/' onClick={navClickExpandHandler}>
                     <Navbar.Brand>SavvyCart</Navbar.Brand>
                 </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={navClickExpandHandler} />
