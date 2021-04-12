@@ -4,6 +4,9 @@ import dotenv from 'dotenv'
 import conn from './config/db.js'
 import colors from 'colors'
 import morgan from 'morgan'
+import pkg from 'cloudinary'
+
+const cloudinary = pkg
 
 import { notFoundRouteHandler, errorHandler } from "./middleware/errorMiddleware.js"
 import productRoutes from "./routes/productRoutes.js"
@@ -20,6 +23,12 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(express.json())
+
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_KEY,
+    api_secret: process.env.CLOUDINARY_SECRET
+})
 
 app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
