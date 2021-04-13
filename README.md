@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and can be viewed here [Heroku SavvyCart Demo](https://savvycart.herokuapp.com/).
+The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and can be viewed here [Heroku SavvyCart Demo](https://savvycart.herokuapp.com/). Since Heroku hibernates apps that are not in use when running dynos, it may take a few seconds to launch the app for Heroku to wake the application. This is not reflective of the app's runtime speed.
 
 ## Features
 - Custom database seeder script
