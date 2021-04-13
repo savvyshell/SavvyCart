@@ -96,7 +96,7 @@ Start by creating the frontend production build.
     cd frontend
     npm run build
 
-With the Heroku postbuild script, you can freely push to Heroku which will automatically build and deploy without you have to do it every time manually.
+With the Heroku postbuild script, you can freely push to Heroku which will automatically build and deploy without you having to do it every time manually.
 
 ## Seeding Database
 
