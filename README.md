@@ -6,17 +6,11 @@
 ![](https://puu.sh/Hy1Ou/392ba44c74.png)
 
 
-**Table of Contents**
+## Live Demo
 
-[TOCM]
+The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and can be viewed here [Heroku SavvyCart Demo](https://savvycart.herokuapp.com/).
 
-[TOC]
-
-##Live Demo
-
-The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and can be viewed here [SavvyCart](https://savvycart.herokuapp.com/)
-
-##Features
+## Features
 - Custom database seeder script
 - PayPal / CC Integration
 - Checkout process
@@ -26,7 +20,7 @@ The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and ca
 		Place Order
 		Payment Method
 		Etc
-
+       
 - Full featured shopping cart
 - Products with reviews & ratings functionality
 - Products carousel for top-rated products
@@ -41,7 +35,7 @@ The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and ca
 
 
 
-##Tech Stack
+## Tech Stack
 
 - MERN
 - MongoDB
@@ -59,13 +53,13 @@ The web-demo of SavvyCart is being hosted on Heroku for testing purposes, and ca
 	* Hooks / ES6
 - NodeJS
 
-##Requirements
+## Requirements
 
 It is important to note that ES modules were used for Node, so be sure to have a least v14.6+. If not, you can use the --experimental-modules flag.
 
-##Usage
+## Usage
 
-###Environment Variable
+### Environment Variable
 
 Create a .env file in the root of the project and add the following:
 ```
@@ -78,7 +72,7 @@ PAYPAL_CLIENT_ID = 'example'
 
 You can modify any of these values freely to your specifications, but these fields must exist and must be valid.
 
-###Installing Dependencies
+### Installing Dependencies
 
 ```
 npm install
@@ -86,7 +80,7 @@ cd frontend
 npm install
 ```
 
-###Run
+### Run
 `npm run dev`
 
 Runs both the server & backend
@@ -95,7 +89,7 @@ Runs both the server & backend
 
 Runs only the server
 
-##Build & Deployment
+## Build & Deployment
 
 Start by creating the frontend production build.
 
@@ -104,7 +98,7 @@ Start by creating the frontend production build.
 
 With the Heroku postbuild script, you can freely push to Heroku which will automatically build and deploy without you have to do it every time manually.
 
-##Seeding Database
+## Seeding Database
 
 With the seeder script, you can issue the following commands to populate the database with temporary data for sample users & products as well as a way to destroy and clear the database.
 
